@@ -62,7 +62,19 @@ html body {
 
 }
 
+/*para celular*/
 @media (min-width: 600px){
+    .contenedor{
+        grid-template: 
+        "header header" 100px
+        "nav nav" 100px
+        "aside article" auto
+        "footer footer" 100px;
+    }
+}
+
+/*para tablet*/
+@media (min-width: 900px){
     .contenedor{
         grid-template: 
         "header header" 100px
