@@ -1,6 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Underdog&display=swap');
 
+/*reset de css a html*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-header {
+html body {
+    height: 100%;
+}
+
+/*aqui uso body*/
+.titulo {
     font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenedor {
+    box-shadow: -1px 1px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    padding: 50px;
+    border-radius: 8px;
+}   
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: red;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: green;
+}
+
+.article {
+    grid-area: article;
+    background-color: greenyellow;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: salmon;
+}
+
+.contenedor {
+    display: grid;
+    gap: 10 px;
+    grid-template: 
+        "header" 100px
+        "nav" 100px
+        "article" auto
+        "aside" 100px
+        "footer" 100px;
+
+}
+
+@media (min-width: 600px){
+    .contenedor{
+        grid-template: 
+        "header header" 100px
+        "nav nav" 100px
+        "aside article" auto
+        "footer footer" 100px;
+    }
 }
