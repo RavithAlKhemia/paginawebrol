@@ -79,7 +79,7 @@ html body {
         grid-template: 
         "header header" 100px
         "nav nav" 100px
-        "aside article" auto
+        "article aside" auto
         "footer footer" 100px;
     }
 }
